@@ -1,1 +1,2 @@
-git �����ļ� 第一次修改文件
+#*****Welcome to my homepage*********
+#开始github之旅
