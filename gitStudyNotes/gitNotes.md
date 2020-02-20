@@ -41,14 +41,15 @@
 ```
 git push --set-upstream <repoName> <branchName>
 repoName：要推送到的远程仓库的名称，默认是origin
-branchName：新建分支在git仓库中的名称，因为是新建分支，所以在远程仓库还不存在，与本地的新建分支名称可以不同
+branchName：新建分支在git仓库中的名称，因为是新建分支，所以在远程仓库还不存在，与本地的新建分支名称必须相同
+本命令执行后，git就会将本地新建分支与远程的同名分支关联起来，下次push操作时，只需执行“git push”命令即可。
 ```
 
 #### 11.将指定分支A合并到目标分支M
 ```
-git checkout <目标分支M> : 切换为目标分支
-git pull: 拉取(目标分支M的)最新代码 
-git merge <要合并的分支A> -m <合并日志>：合并指定分支A
+1.git checkout <目标分支M> : 切换为目标分支
+2.(选做)git pull: 拉取(目标分支M的)最新代码 
+3.git merge <要合并的分支A> ：合并指定分支A
 ```
 
 
